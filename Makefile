@@ -122,16 +122,16 @@ an existing lotus binary in your PATH. This may cause problems if you don't run 
 install: install-daemon install-miner install-worker
 
 install-daemon:
-	install -C ./lotus /usr/local/bin/lotus
+	install -C ./lotus ${HOME}/.local/bin/lotus
 
 install-miner:
-	install -C ./lotus-miner /usr/local/bin/lotus-miner
+	install -C ./lotus-miner ${HOME}/.local/bin/lotus-miner
 
 install-worker:
-	install -C ./lotus-worker /usr/local/bin/lotus-worker
+	install -C ./lotus-worker ${HOME}/.local/bin/lotus-worker
 
 install-app:
-	install -C ./$(APP) /usr/local/bin/$(APP)
+	install -C ./$(APP) ${HOME}/.local/bin/$(APP)
 
 # TOOLS
 
